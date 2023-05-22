@@ -19,4 +19,4 @@
 
 ---
 
-Fique a vontade para deixar um [Issue](https://github.com/rodineyw/projeto-login/issues)! 😊
+Feel free to leave a [Issue](https://github.com/rodineyw/projeto-login/issues)! 😊

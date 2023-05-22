@@ -1,19 +1,22 @@
-/* 
-    Paleta de Cores
-    Royal Blue: #4169E1
-    Medium Sea Green: #3CB371
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600&family=MuseoModerno:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,900&family=Raleway:ital,wght@0,200;0,400;0,500;0,700;1,100&family=Source+Code+Pro:wght@300;400;700&display=swap');
 
-*/    
+:root {
+    --cor-white: #fff;
+    --cor-white-200: #bebebe;
+    --cor-dark: #131624;
+    --cor-dark-200: #263147;
+}
 
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Inter';
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 body, html {
-    background-color: #4169E1;
+    background-image: linear-gradient(to top, #541a5f, #6b29b6);
     height: 100vh;
     width: 100vw;
 }
@@ -30,10 +33,10 @@ section#login {
     left: 50%;
     overflow: hidden;
 
-    background-color: #fff;
+    background-color: var(--cor-white);
     width: 250px;
     height: 515px;
-    border-radius: 20px;
+    border-radius: 2rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
     transform: translate(-50%, -50%);
@@ -43,15 +46,15 @@ section#login {
 
 section#login > div#imagem {
     display: block;
-    background: #3CB371 url(../imagens/metal.jpg) no-repeat;
+    background: var(--cor-dark) url(../imagens/metal.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
-    height: 200px;
+    height: 20.0rem;
 }
 
 section#login > div#formulario {
     display: block;
-    padding: 10px;
+    padding: 1rem;
 }
 
 div#formulario > h1 {
@@ -60,16 +63,16 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
-    font-size: 0.8em;
+    font-size: 1.5rem;
 }
 
 form > div.campo {
-    background-color: #3CB371;
-    border: 2px solid #3CB371;
+    background-color: var(--cor-dark-200);
+    border: none;
     display: block;
     width: 100%;
-    height: 40px;
-    border-radius: 8px;
+    height: 4rem;
+    border-radius: 0.8rem;
     margin: 5px 0px;
 }
 
@@ -78,38 +81,37 @@ div.campo > label {
 }
 
 div.campo > i {
-    color: #fff;
-    /*background-color: black;*/
-    font-size: 1.9em;
+    color: var(--cor-white);
+    background-color: transparent;
+    font-size: 1.9rem;
     width: 40px;
     padding: 5px;
 }
 
 div.campo > input {
-    background-color: #4169E1;
-    font-size: 1em;
-    width: calc(100% - 45px);
-    height: 100%;
-    border: 0px;
-    border-radius: 8px;
-    padding: 4px;
-    transform: translateY(-10px);
+    background-color: var(--cor-white-200);
+    font-size: 1.2rem;
+    width: calc(100% - 4.5rem);
+    height: 90%;
+    border: none;
+    border-radius: 0.8rem;
+    padding: 1rem;
 }
 
 div.campo > input:focus-within {
-    background-color: #fff;
+    background-color: var(--cor-white);
     border: none;
 }
 
-form > input[tye=submit] {
+form > input[type=submit] {
     display: block;
-    font-size: 1em;
+    font-size: 1.3rem;
     width: 100%;
-    height: 40px;
-    background-color: #8ca9f1;
+    height: 4rem;
+    background-color: var(--cor-dark-200);
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 
@@ -120,22 +122,22 @@ form > input[type=submit]:hover {
 form > a.botao {
     display: block;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.3rem;
     width: 100%;
-    height: 40px;
-    padding-top: 5px;
+    height: 4rem;
+    padding-top: 1rem;
     margin-top: 5px;
-    background-color: #fff;
-    color: #2d6462;
-    border: 1px solid #4169E1;
+    background-color: var(--cor-white);
+    color: var(--cor-dark-200);
+    border: 1px solid var(--cor-dark-200);
     border-radius: 7px;
     text-decoration: none;
 }
 
 form > a.botao:hover {
-    background-color: #4169E1;
+    background-color: var(--cor-white-200);
 }
 
 form > a.botao > i {
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }

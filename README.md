@@ -16,3 +16,7 @@
 ## 🚧 Project:
 
 > [Demo](https://projeto-login-swart.vercel.app/) for Project.
+
+---
+
+Fique a vontade para deixar um [Issue](https://github.com/rodineyw/projeto-login/issues)! 😊
